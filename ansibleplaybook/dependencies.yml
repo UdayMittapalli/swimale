@@ -1,0 +1,10 @@
+- name: Install dependencies
+  apt:
+    name: [dependencies]
+    state: present
+  become: true
+
+- name: Deploy app
+  [command or script to deploy app]
+  become: true
+

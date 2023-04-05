@@ -1,0 +1,4 @@
+[workers]
+worker1 ansible_host=10.0.0.1
+worker2 ansible_host=10.0.0.2
+worker3 ansible_host=10.0.0.3

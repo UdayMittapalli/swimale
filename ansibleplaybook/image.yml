@@ -1,0 +1,9 @@
+"provisioners": [
+    {
+        "type": "ansible",
+        "playbook_file": "app-deploy.yml",
+        "extra_arguments": ["--extra-vars", "env={{user `environment`}}"],
+        "user": "{{user `ssh_username`}}"
+    }
+]
+

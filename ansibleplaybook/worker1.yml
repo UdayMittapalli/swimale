@@ -1,0 +1,9 @@
+- name: Install NTP package
+  apt:
+    name: ntp
+    state: present
+  become: true
+  become_method: sudo
+  become_user: root
+  hosts: workers
+

@@ -1,0 +1,10 @@
+- name: Start NTP service
+  service:
+    name: ntp
+    state: started
+    enabled: yes
+  become: true
+  become_method: sudo
+  become_user: root
+  hosts: workers
+
